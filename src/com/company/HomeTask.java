@@ -35,9 +35,11 @@ public class HomeTask {
 //BranchingTask1 task7 = new BranchingTask1();
 //task7.branchingTask1();
 
-        BranchingTask2 task8= new BranchingTask2();
-        task8.branchingTask2();
+        //BranchingTask2 task8= new BranchingTask2();
+        //task8.branchingTask2();
 
+        BranchingTask3 task9= new BranchingTask3();
+        task9.branchingTask3();
 
     }
 }
