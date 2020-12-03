@@ -40,11 +40,15 @@ public class HomeTask {
 
         //BranchingTask3 task9= new BranchingTask3();
        // task9.branchingTask3();
-        BranchingTask4 task10= new BranchingTask4();
-        task10.branchingTask4();
+        //BranchingTask4 task10= new BranchingTask4();
+       // task10.branchingTask4();
 
+       // BranchinTask5 task11= new BranchinTask5();
+        //task11.branchinTask5();
 
-
-
+BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+int input= Integer.parseInt(br.readLine());
+CyclesTask1 task12=new CyclesTask1();
+task12.syclesTask1(input);
     }
 }
