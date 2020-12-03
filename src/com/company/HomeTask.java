@@ -46,9 +46,13 @@ public class HomeTask {
        // BranchinTask5 task11= new BranchinTask5();
         //task11.branchinTask5();
 
-BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
-int input= Integer.parseInt(br.readLine());
-CyclesTask1 task12=new CyclesTask1();
-task12.syclesTask1(input);
+//BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+//int input= Integer.parseInt(br.readLine());
+//CyclesTask1 task12=new CyclesTask1();
+//task12.syclesTask1(input);
+
+        CyclesTask3and4 task13=new CyclesTask3and4();
+        task13.cyclesTask3and4();
+
     }
 }
