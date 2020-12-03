@@ -25,8 +25,8 @@ public class HomeTask {
        // task4.linearProgramsTask4();
 
 
-        LinearProgramsTask5 task5=new LinearProgramsTask5();
-        task5.linearProgramsTask5();
+       // LinearProgramsTask5 task5=new LinearProgramsTask5();
+        //task5.linearProgramsTask5();
 
 
         LinearProgramsTask6 task6=new LinearProgramsTask6();
