@@ -32,9 +32,11 @@ public class HomeTask {
         //LinearProgramsTask6 task6=new LinearProgramsTask6();
         //task6.linearProgramsTask6();
 
-BranchingTask1 task7 = new BranchingTask1();
-task7.branchingTask1();
+//BranchingTask1 task7 = new BranchingTask1();
+//task7.branchingTask1();
 
+        BranchingTask2 task8= new BranchingTask2();
+        task8.branchingTask2();
 
 
     }
