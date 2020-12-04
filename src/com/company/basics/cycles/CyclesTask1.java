@@ -1,4 +1,4 @@
-package com.company;
+package com.company.basics.cycles;
 
 public class CyclesTask1 {
 int sum=0;

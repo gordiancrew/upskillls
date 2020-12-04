@@ -14,8 +14,8 @@ public class HomeTask {
     public static void main(String[] args) throws IOException {
 	// write your code here
         System.out.println(" I starting my first project on gitHub.");
-LinearProgramsTask1 task1= new LinearProgramsTask1();
-task1.linearProgramsTask1();
+//LinearProgramsTask1 task1= new LinearProgramsTask1();
+//task1.linearProgramsTask1();
 
 //LinearProgramsTask2 task2=new LinearProgramsTask2();
 //task2.linearProgramsTask2();

@@ -1,7 +1,7 @@
 package com.company.basics.linearprograms;
 
 public class LinearProgramsTask2 {
-
+//2. Вычислить значение выражения по формуле (все переменные принимают действительные значения): +image(task2)
 
     public static void main(String[] args) {
 

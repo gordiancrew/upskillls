@@ -1,4 +1,4 @@
-package com.company;
+package com.company.basics.branching;
 
 public class BranchingTask1 {
     int angle1=30;

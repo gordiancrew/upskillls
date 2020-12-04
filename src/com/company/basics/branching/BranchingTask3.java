@@ -1,4 +1,4 @@
-package com.company;
+package com.company.basics.branching;
 
 public class BranchingTask3 {
 int x1=1;

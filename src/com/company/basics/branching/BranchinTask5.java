@@ -1,4 +1,4 @@
-package com.company;
+package com.company.basics.branching;
 
 public class BranchinTask5 {
     double x=5;
