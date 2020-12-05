@@ -3,20 +3,28 @@ package com.company.basics.cycles;
 import java.math.BigInteger;
 
 public class CyclesTask3and4 {
-    int square100=0;
-   BigInteger mult200=BigInteger.valueOf(1);
+    //3. Найти сумму квадратов первых ста чисел.
+    //4. Составить программу нахождения произведения квадратов первых двухсот чисел.
 
-    void cyclesTask3and4(){
-for(int i=1;i<=100;i++){
-square100=square100+i*i;}
+    public static void main(String[] args) {
+        cyclesTask3();
+        cyclesTask4();
+    }
 
-for(int i =1;i<=200;i++) {
-    mult200 = mult200.multiply(BigInteger.valueOf((long)i*i));
+    public static void cyclesTask3() {
+        int square100 = 0;
+        for (int i = 1; i <= 100; i++) {
+            square100 = square100 + i * i;
+        }
+        System.out.println("task3= " + square100);
+    }
 
+    public static void cyclesTask4() {
 
-}
-        System.out.println("task3= "+square100+",\n task4= "+mult200);
-
-
+        BigInteger mult200 = BigInteger.valueOf(1);
+        for (int i = 1; i <= 200; i++) {
+            mult200 = mult200.multiply(BigInteger.valueOf((long) i * i));
+        }
+        System.out.println("task4= " + mult200);
     }
 }
