@@ -24,10 +24,6 @@ public class LinearProgramsTask5 {
     }
 
     static void version2(long t) {
-
-
         System.out.println(t / (60 * 60) % 24 + " " + t / 60 % 60 + " " + t % 60);
-
-
     }
 }

@@ -26,20 +26,10 @@ public class LinearProgramsTask4 {
         int point = 0;
         for (int i = 0; i < xString.length(); i++) {
             if (xString.charAt(i) == '.')
-
                 point = i;
-
-
         }
-
-
         xString = xString.substring(point + 1, xString.length()) + "." + xString.substring(0, point);
         double fin = Double.parseDouble(xString);
-
         System.out.println(fin);
-
-
     }
-
-
 }

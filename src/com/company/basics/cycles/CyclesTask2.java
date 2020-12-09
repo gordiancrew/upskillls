@@ -22,7 +22,7 @@ public class CyclesTask2 {
 
     public static void slover(double a, double b, double h) {
 
-        for (double i = a; i <= b; i = i + h) {
+        for (double i = a; i <= b; i += h) {
             System.out.println(("x= " + i + ", y= ") + (i > 2 ? i : -i));
         }
     }

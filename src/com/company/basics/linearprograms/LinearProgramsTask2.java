@@ -1,21 +1,16 @@
 package com.company.basics.linearprograms;
 
+import static java.lang.Math.pow;
+import static java.lang.StrictMath.sqrt;
+
 public class LinearProgramsTask2 {
 //2. Вычислить значение выражения по формуле (все переменные принимают действительные значения): +image(task2)
 
     public static void main(String[] args) {
-
-       linearProgramsTask2(3, 4, 5);
-       linearProgramsTask2(7, 9, 2);
-       linearProgramsTask2(55, 1, 3);
+        System.out.println(computationZ(3, 4, 5));
     }
 
-    static void linearProgramsTask2(double a, double b, double c) {
-
-        double z = b + Math.sqrt(Math.pow(b, 2) + 4 * a * c) / 2 * a - Math.pow(a, 3) * c + Math.pow(b, -2);
-        System.out.println(z);
-
+    static double computationZ(double a, double b, double c) {
+        return b + sqrt(pow(b, 2) + 4 * a * c) / 2 * a - pow(a, 3) * c + pow(b, -2);
     }
-
-
 }
