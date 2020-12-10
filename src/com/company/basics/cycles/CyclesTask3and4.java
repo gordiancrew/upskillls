@@ -20,7 +20,6 @@ public class CyclesTask3and4 {
     }
 
     public static void cyclesTask4() {
-
         BigInteger mult200 = BigInteger.valueOf(1);
         for (int i = 1; i <= 200; i++) {
             mult200 = mult200.multiply(BigInteger.valueOf((long) i * i));

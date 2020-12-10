@@ -1,5 +1,9 @@
 package com.company.basics.linearprograms;
 
+import static java.lang.Math.cos;
+import static java.lang.Math.sin;
+import static java.lang.StrictMath.tan;
+
 public class LinearProgramsTask3 {
 //3. Вычислить значение выражения по формуле (все переменные принимают действительные значения): +imag(task3)
 
@@ -8,6 +12,6 @@ public class LinearProgramsTask3 {
     }
 
     public static double computator(double x, double y) {
-        return (Math.sin(x) + Math.cos(y)) / (Math.cos(x) + Math.sin(y)) * Math.tan(x) * y;
+        return (sin(x) + cos(y)) / (cos(x) + sin(y)) * tan(x) * y;
     }
 }

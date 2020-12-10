@@ -12,13 +12,12 @@ public class CyclesTask1 {
         System.out.println("Input number: ");
         if (scan.hasNextInt()) {
             int input = scan.nextInt();
-            int sum=sumNumbers(input);
-            System.out.println(sum);
+            System.out.println(sumNumbers(input));
+
         } else
             System.out.println("This is not number");
         scan.close();
     }
-
     public static int sumNumbers(int input) {
         int sum = 0;
         for (int i = 1; i <= input; i++)

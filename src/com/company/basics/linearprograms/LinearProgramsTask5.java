@@ -12,18 +12,18 @@ public class LinearProgramsTask5 {
 //ННч ММмин SSc.
 
     public static void main(String[] args) {
-        version1(2000000);
-        version2(2000000);
+        timeFormater1(2000000);
+        timeFormater2(2000000);
     }
 
-    static void version1(long t) {
+    static void timeFormater1(long t) {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH mm ss");
         simpleDateFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
         Date date = new Date(t * 1000);
         System.out.println(simpleDateFormat.format(date));
     }
 
-    static void version2(long t) {
+    static void timeFormater2(long t) {
         System.out.println(t / (60 * 60) % 24 + " " + t / 60 % 60 + " " + t % 60);
     }
 }
