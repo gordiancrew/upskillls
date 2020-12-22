@@ -2,7 +2,6 @@ package com.company.algoritmization.oneDimencionalArrays;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
 public class Task2 {
     //2. Дана последовательность действительных чисел а1 ,а2 ,..., ап.
     // Заменить все ее члены, большие данного Z, этим числом. Подсчитать количество замен.
