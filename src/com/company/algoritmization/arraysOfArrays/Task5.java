@@ -11,11 +11,12 @@ public class Task5 {
         int n = scan.nextInt();
         scan.close();
         System.out.println("Square matrix is: ");
-        for (int[] x : createSquareMatrix(n))
+       Task5 a=new Task5();
+        for (int[] x : a.createSquareMatrix(n))
             System.out.println(Arrays.toString(x));
     }
 
-    public static int[][] createSquareMatrix(int n) {
+    public   int[][] createSquareMatrix(int n) {
         if (n % 2 != 0) {
             System.out.println("N is not even number!");
             System.exit(1);
