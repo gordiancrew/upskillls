@@ -15,30 +15,16 @@ public class Task16 {
     }
 
     public static void sumNumbersWithOddNumerals(int n) {
-        int first = firstOddNumber(n);
-        int last = lastOddNumber(n);
         int sum = 0;
-        for (int i = first; i <= last; i += 2) {
-            sum += i;
+        System.out.println("Numbers with odd numerals: ");
+        for (int i = ((int) Math.pow(10, (n - 1))); i < (int) Math.pow(10, n); i++) {
+            if (colculateEvenNumeralsOfNumber(i) == 0) {
+                System.out.println(i);
+                sum += i;
+            }
         }
-        System.out.println("Sum= " + sum);
-        System.out.println("Quantity even numerals of number " + sum + " is " + colculateEvenNumeralsOfNumber(sum));
-    }
-
-    public static int firstOddNumber(int n) {
-        int f = 1;
-        for (int i = 2; i <= n; i++) {
-            f = f * 10 + 1;
-        }
-        return f;
-    }
-
-    public static int lastOddNumber(int n) {
-        int l = 9;
-        for (int i = 2; i <= n; i++) {
-            l = l * 10 + 9;
-        }
-        return l;
+        System.out.println("Sum= "+sum);
+        System.out.println("Number even numerals of sum= "+colculateEvenNumeralsOfNumber(sum));
     }
 
     public static int colculateEvenNumeralsOfNumber(int number) {

@@ -17,8 +17,8 @@ public class Task17 {
         int step = 0;
         int res = n;
         int sum = sumNumerals(n);
-        while (res > 0) {
-            res = res - sum;
+        while (res !=0) {
+            res = res - sumNumerals(res);
             step++;
         }
         return step;

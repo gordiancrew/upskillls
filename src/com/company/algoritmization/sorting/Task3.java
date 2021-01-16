@@ -12,16 +12,26 @@ public class Task3 {
     }
 
     public static int[] bubbleSort(int[] a) {
-        for (int i = 0; i < a.length; i++) {
+        int count1 = 0;
+        int count2 = 0;
+        int count3 = 0;
+        boolean isSorted = false;
+        while (!isSorted) {
+            isSorted = true;
+            count1++;
             for (int j = 1; j < a.length; j++) {
+                count2++;
                 int value = 0;
-                if (a[j] < a[j-1]) {
+                if (a[j] < a[j - 1]) {
+                    count3++;
                     value = a[j];
                     a[j] = a[j - 1];
                     a[j - 1] = value;
+                    isSorted = false;
                 }
             }
         }
+        System.out.println(count1 + " " + count2 + " " + count3);
         return a;
     }
 }

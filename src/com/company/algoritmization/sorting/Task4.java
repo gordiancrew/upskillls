@@ -12,15 +12,18 @@ public class Task4 {
     }
 
     public static int[] insertionSort(int[] a) {
+        int count=0;
         for (int i = 1; i < a.length; i++) {
             int value = a[i];
             int j = i - 1;
             while (j >= 0 && value < a[j]) {
                 a[j + 1] = a[j];
+                count++;
                 j--;
             }
             a[j + 1] = value;
         }
+        System.out.println(count);
         return a;
     }
 }

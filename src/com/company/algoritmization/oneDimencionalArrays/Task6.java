@@ -11,23 +11,33 @@ public class Task6 {
         System.out.println("Input the lenght of the array: ");
         int n = scan.nextInt();
         scan.close();
-        double[] a = createArray(n);
+        int[] a = createArray(n);
         System.out.println("The sum of numbers whose ordinal number is a prime number = " + sumNumbersOrdinalSimle(a));
     }
 
-    public static double sumNumbersOrdinalSimle(double[] a) {
-        double sum = 0;
+    public static int sumNumbersOrdinalSimle(int[] a) {
+        int sum = 0;
         for (int i = 0; i < a.length; i++) {
-            if (i > 0)
+            if (isSimple(i + 1))
                 sum += a[i];
         }
         return sum;
     }
 
-    public static double[] createArray(int n) {
-        double[] a = new double[n];
+    static boolean isSimple(int index) {
+        if (index < 2)
+            return false;
+        for (int i = index - 1; i > 1; i--) {
+            if (index % i == 0)
+                return false;
+        }
+        return true;
+    }
+
+    public static int[] createArray(int n) {
+        int[] a = new int[n];
         for (int i = 0; i < n; i++) {
-            a[i] = Math.random() * 99;
+            a[i] = (int) (Math.random() * 99);
         }
         System.out.println("Array A= " + Arrays.toString(a));
         return a;

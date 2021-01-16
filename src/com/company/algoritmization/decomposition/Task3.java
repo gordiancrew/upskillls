@@ -18,7 +18,7 @@ public class Task3 {
         return calculatorSquareTriangle(a) * 6;
     }
 
-    public static double calculatorSquareTriangle(double a) {
+    private static double calculatorSquareTriangle(double a) {
         return (a * a * sqrt(3)) / 4;
     }
 }
