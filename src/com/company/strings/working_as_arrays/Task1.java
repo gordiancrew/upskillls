@@ -10,11 +10,11 @@ public class Task1 {
 
     public static void main(String[] args) {
         String[] a = {"ladaPrioraSedan", "volkswagenGolf", "renaultMeganeUniversal","kiaRio"};
-        String[] b = formaterToCamelCase(a);
+        String[] b = formaterToSnakeCase(a);
         System.out.println(Arrays.toString(b));
     }
 
-    public static String[] formaterToCamelCase(String[] a) {
+    public static String[] formaterToSnakeCase(String[] a) {
         for (int i = 0; i < a.length; i++) {
             StringBuilder str = new StringBuilder(a[i]);
             for (int j = 0; j < str.length(); j++) {

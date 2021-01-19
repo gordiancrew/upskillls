@@ -8,18 +8,17 @@ public class Task2 {
         Scanner scan = new Scanner(System.in);
         System.out.println("Input text: ");
         String input = scan.nextLine();
+        System.out.println("Input word to change: ");
+        String wordCange = scan.nextLine();
+        System.out.println("Input word to change to: ");
+        String changer = scan.nextLine();
         scan.close();
-        System.out.println(changeWordForLetter(input));
+        System.out.println(changeWordForLetter(input, wordCange, changer));
+
     }
 
-    public static String changeWordForLetter(String input) {
-        StringBuilder str = new StringBuilder(input);
-        for (int i = 0; i <= str.length() - 4; i++) {
-            if (str.substring(i, i + 4).equals("word")) {
-                str.delete(i, i + 4);
-                str.insert(i, "letter");
-            }
-        }
-        return str.toString();
+    public static String changeWordForLetter(String input, String wordChange, String wordChanger) {
+        String chenger = input.replace(wordChange, wordChanger);
+        return chenger;
     }
 }
