@@ -10,11 +10,10 @@ public class Main {
     public static void main(String[] args) {
         TextAnalizator a = new TextAnalizator();
         String text = "Да! Я помню чудное мгновенье.\nПередо мной явилась ты. Как мимолетное виденье. Внезапно.\nКак гений чистой красоты!";
-        a.setText(text);
-        System.out.println("Sort paragraphs of number sentences: \n" + a.sortParagraphsOfNumberSentences(text));
-        System.out.println("\nSort sentences of words lentghs :");
-        a.printSortSentencesOfWordLengths(text);
-        System.out.println("\nSort sentences of lexems : ");
-        a.printSortLexemOfSentences(text);
+        //a.setText(text);
+        System.out.println("Sort paragraphs of number sentences: \n" + Arrays.toString(a.sortParagraphsOfNumberSentences(text)));
+        System.out.println("\nSort sentences of words lentghs : \n"+Arrays.toString(a.SortSentencesOfWordLengths(text)));
+        System.out.println("\nSort sentences of lexems : \n"+Arrays.toString(a.SortLexemOfSentences(text)));
+
     }
 }
