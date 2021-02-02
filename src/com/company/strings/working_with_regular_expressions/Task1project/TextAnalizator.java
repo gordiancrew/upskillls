@@ -15,23 +15,23 @@ public class TextAnalizator {
         this.text = text;
     }
 
-    public String[] sortParagraphsOfNumberSentences(String a) {
-        return sortForNumberSentences(a);
+    public String sortParagraphsOfNumberSentences(String a) {
+        return Arrays.toString(sortForNumberSentences(a));
     }
 
-    public String[] SortSentencesOfWordLengths(String a) {
+    public String SortSentencesOfWordLengths(String a) {
         String[] list = splitIntoSentences(a);
         for (int i = 0; i < list.length; i++) {
             list[i] = (Arrays.toString(sortWordsForLength(list[i])));
         }
-        return list;
+        return Arrays.toString(list);
     }
 
-    public String[] SortLexemOfSentences(String a) {
+    public String SortLexemOfSentences(String a) {
         String[] sentencesList = splitIntoSentences(a);
         for (int i = 0; i < sentencesList.length; i++) {
             sentencesList[i] = Arrays.toString(sortWordsForLexems(sentencesList[i]));
         }
-        return sentencesList;
+        return Arrays.toString(sentencesList);
     }
 }
