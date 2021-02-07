@@ -29,14 +29,15 @@ public class Triangle {
         this.cX = cX;
         this.cY = cY;
     }
-    public void  printSidesTriangle(){
-        System.out.println("Result: " );
-      colculateSidesTriangle();
+
+    public void printSidesTriangle() {
+        System.out.println("Result: ");
+        colculateSidesTriangle();
         System.out.println("side ab= " + formater.format(ab) + ", side bc= " + formater.format(bc) + ", side ca=  " + formater.format(ca));
     }
 
 
-    private  void colculateSidesTriangle() {
+    private void colculateSidesTriangle() {
         ab = colculateSide(aX, aY, bX, bY);
         bc = colculateSide(bX, bY, cX, cY);
         ca = colculateSide(cX, cY, aX, aY);
@@ -59,4 +60,11 @@ public class Triangle {
         return sqrt(p * (p - ab) * (p - bc) * (p - ca));
     }
 
+    public void printCrossMedians() {
+        double dX = (bX + cX) / 2;//"d- точка на середине отрезка bc;
+        double dY = (bY + cY) / 2;
+        double crossMedX = (dX- ((dX - aX) / 3));
+        double crossMedY = (dY- ((dY - aY) / 3));
+        System.out.println("Point cross of medians: x= " + formater.format(crossMedX) + ", y= " + formater.format(crossMedY));
+    }
 }

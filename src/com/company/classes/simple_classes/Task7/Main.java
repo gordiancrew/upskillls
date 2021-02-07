@@ -12,5 +12,6 @@ public class Main {
         s.printSidesTriangle();
         System.out.println("Square triangle is : "+formater.format(s.squareTriangle()));
         System.out.println("Perimetr triangle is : "+formater.format(s.perimetrTriangle()));
+        s.printCrossMedians();
     }
 }
