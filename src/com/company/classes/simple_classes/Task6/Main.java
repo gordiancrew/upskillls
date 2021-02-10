@@ -8,11 +8,17 @@ public class Main {
     // Создать методы изменения времени на заданное количество часов, минут и секунд.
 
     public static void main(String[] args) {
-        Timer t = new Timer();
-        t.printTimer();
-        t.rollHour(5);
-        t.printTimer();
-        t.setHour(60);
-        t.printTimer();
+       Timer2 t=new Timer2();
+        System.out.println(t);
+        t.rollHours(2);
+        t.rollMinutes(33);
+        t.rollSeconds(9);
+        System.out.println(t);
+        t.rollSeconds(60);
+        System.out.println(t);
+        t.rollSeconds(200);
+        System.out.println(t);
+        t.setMinutes(100);
+        System.out.println(t);
     }
 }

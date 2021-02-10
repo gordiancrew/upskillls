@@ -22,6 +22,14 @@ public class Test2 {
         this.b = b;
     }
 
+    public int getA() {
+        return a;
+    }
+
+    public int getB() {
+        return b;
+    }
+
     public void printAB() {
         System.out.println("a= " + a + ", b=" + b);
     }

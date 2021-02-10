@@ -24,20 +24,23 @@ public class CustomersList {
     }
 
     public ArrayList<Customer> sortCustomersLetters() {
+        System.out.println("SORT ALFABET LIST:");
+        ArrayList<Customer> listSort = list;
         Comparator<Customer> comp = Comparator.comparing(Customer::getName);
-
-        Collections.sort(list, comp);
-        return list;
+        Collections.sort(listSort, comp);
+        return listSort;
     }
 
-    public ArrayList<Customer> listCustomersByCreditNumber(BigInteger min, BigInteger max) {
+
+    public ArrayList listCustomersByCreditNumber(BigInteger min, BigInteger max) {
+        System.out.println("SORT CREDIT NUMBER LIST:");
+        ArrayList<Customer>sortCreditNumber=new ArrayList<>();
         for (int i = 0; i < list.size(); i++) {
-            if ((list.get(i).getCredinNumber()).compareTo(max) > 0 || list.get(i).getCredinNumber().compareTo(min) < 0) {
-                list.remove(i);
-                i--;
+            if ((list.get(i).getCredinNumber()).compareTo(max) <= 0 && list.get(i).getCredinNumber().compareTo(min) >= 0) {
+               sortCreditNumber.add(list.get(i));
             }
         }
-        return list;
+        return sortCreditNumber;
     }
 
     @Override

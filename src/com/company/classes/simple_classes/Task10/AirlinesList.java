@@ -1,5 +1,6 @@
 package com.company.classes.simple_classes.Task10;
 
+import com.company.algoritmization.decomposition.Task5project.Array;
 import com.company.classes.simple_classes.Task9.Book;
 
 import java.text.SimpleDateFormat;
@@ -19,28 +20,31 @@ public class AirlinesList {
         list.add(airline);
     }
 
-    public  void printAirLinesListForDestination(String destination){
-        System.out.println("AIRLINE LIST FOR DESTINATION "+destination.toUpperCase()+" :");
-        for(Airline x:list){
-         if(x.getDestination().equals(destination))
-             System.out.println(x);
+    public  ArrayList AirLinesListForDestination(String destination){
+        ArrayList<Airline>airlineDestination= new ArrayList<>();
+        for(int i=0;i<list.size();i++){
+         if(list.get(i).getDestination().equals(destination))
+             System.out.println(list.get(i));
         }
+        return  airlineDestination;
     }
 
-    public void printAirlinesForWeekDay(String weekDay){
-        System.out.println("AIRLINES LIST FOR "+weekDay.toUpperCase()+" :");
-        for(Airline x:list){
-           if(x.getWeekDays().contains(weekDay))
-               System.out.println(x);
+    public ArrayList AirlinesForWeekDay(String weekDay){
+        ArrayList<Airline>airlineWeekDay=new ArrayList<>();
+        for(int i=0;i<list.size();i++){
+           if(list.get(i).getWeekDays().contains(weekDay))
+              airlineWeekDay.add(list.get(i));
         }
+        return  airlineWeekDay;
     }
 
-    public void printAirlinesForWeekDaySinseTime(String weekDay, Date time){
-        System.out.println("AIRLINES LIST FOR "+weekDay.toUpperCase()+" sinse "+df.format(time)+" :");
-        for(Airline x:list){
-            if(x.getWeekDays().contains(weekDay)&&x.getTime().compareTo(time)>0)
-                System.out.println(x);
+    public ArrayList AirlinesForWeekDaySinseTime(String weekDay, Date time){
+        ArrayList<Airline>airlineWeekdayTime=new ArrayList<>();
+        for(int i=0;i<list.size();i++){
+            if(list.get(i).getWeekDays().contains(weekDay)&&list.get(i).getTime().compareTo(time)>0)
+               airlineWeekdayTime.add(list.get(i));
         }
+        return airlineWeekdayTime;
     }
 
     @Override
@@ -52,5 +56,4 @@ public class AirlinesList {
         }
         return str.toString();
     }
-
 }

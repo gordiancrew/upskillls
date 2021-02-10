@@ -21,8 +21,6 @@ public class Book {
         price = 0;
         binding = " ";
         id = generatorID;
-
-
     }
 
     public Book(String name, String author, String publishing, int year, int numberOfPages, double price, String binding) {
@@ -99,8 +97,7 @@ public class Book {
 
     @Override
     public String toString() {
-
         return "Name: " + getName() + ", id is:" + getId() + ", author is: " + getAuthor() + ", publishing is: " + getPublishing() +
-                "\nyear is: " + getYear() + ", number of pages is: " + getNumberOfPages() + ", price is: " + getPrice() + ", binding is: " + getBinding();
+                ", year is: " + getYear() + ", number of pages is: " + getNumberOfPages() + ", price is: " + getPrice() + ", binding is: " + getBinding();
     }
 }

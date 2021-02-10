@@ -23,7 +23,7 @@ public class Sentence {
         StringBuilder str = new StringBuilder();
         for (int i=0;i<sentence.size();i++) {
           if(i==0){
-            str.append(sentence.get(i).firstWord(sentence.get(i).getWord())+" ") ;
+            str.append(" "+sentence.get(i).getWord().substring(0,1).toUpperCase()+sentence.get(i).getWord().substring(1,sentence.get(i).getWord().length())+" ") ;
           }
           else if(i==sentence.size()-1)
               str.append(sentence.get(i).getWord()+".") ;

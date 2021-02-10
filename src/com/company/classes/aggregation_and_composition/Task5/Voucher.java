@@ -1,7 +1,7 @@
 package com.company.classes.aggregation_and_composition.Task5;
 
 public class Voucher {
-    Transport transport;
+    private Transport transport;
     Food food;
     int priceDay;
     String country;
@@ -13,6 +13,9 @@ public class Voucher {
         this.priceDay=priceDay;
         this.country=country;
         this.type=type;
+    }
+    public  static void printA(){
+        System.out.println("A");
     }
 
     public void setPrice(int price) {
@@ -74,3 +77,4 @@ public class Voucher {
                 '}';
     }
 }
+

@@ -8,6 +8,22 @@ public class Test1 {
         System.out.println("a= " + a + ", b=" + b);
     }
 
+    public void setA(int a) {
+        this.a = a;
+    }
+
+    public int getA() {
+        return a;
+    }
+
+    public void setB(int b) {
+        this.b = b;
+    }
+
+    public int getB() {
+        return b;
+    }
+
     public void changeAB() {
         a = a + b;
         b = a - b;

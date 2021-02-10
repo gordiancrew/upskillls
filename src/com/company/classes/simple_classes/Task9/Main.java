@@ -23,6 +23,5 @@ public class Main {
         booklist1.listBooksForAuthor("Gogol");
         booklist1.listBooksForPublishing("Moskva");
         booklist1.listBooksFromYear(1990);
-
     }
 }

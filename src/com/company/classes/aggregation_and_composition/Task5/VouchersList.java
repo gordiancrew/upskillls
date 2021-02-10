@@ -6,10 +6,12 @@ import java.util.Comparator;
 public class VouchersList {
     ArrayList<Voucher> vList;
     private int price;
+    private boolean t;
 
     public VouchersList() {
         vList = new ArrayList<>();
     }
+
 
     public void setVoucher(Voucher voucher) {
         vList.add(voucher);
@@ -27,7 +29,7 @@ public class VouchersList {
         variants.sort(comparator);
         for (Voucher x : variants) {
             System.out.println(x + "Price voucher is: " + x.getPrice());
-
+            System.out.println(t);
 
         }
 

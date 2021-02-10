@@ -20,28 +20,31 @@ public class BooksList {
         return list;
     }
 
-    public void listBooksForAuthor(String author) {
-        System.out.println("BOOKS OF AUTHOR " + author.toUpperCase() + " :");
-        for (Book x : list) {
-            if (x.getAuthor().equals(author))
-                System.out.println(x);
+    public ArrayList listBooksForAuthor(String author) {
+       ArrayList<Book>booksAuthor=new ArrayList<>();
+        for (int i=0; i<list.size();i++) {
+            if (list.get(i).getAuthor().equals(author))
+               booksAuthor.add(list.get(i));
         }
+        return booksAuthor;
     }
 
-    public void listBooksForPublishing(String publishing) {
-        System.out.println("BOOKS OF PUBLISHING " + publishing.toUpperCase() + " :");
-        for (Book x : list) {
-            if (x.getPublishing().equals(publishing))
-                System.out.println(x);
+    public ArrayList<Book> listBooksForPublishing(String publishing) {
+       ArrayList<Book>booksPublish= new ArrayList<>();
+        for (int i=0; i<list.size();i++) {
+            if (list.get(i).getPublishing().equals(publishing))
+               booksPublish.add(list.get(i));
         }
+        return booksPublish;
     }
 
-    public void listBooksFromYear(int year) {
-        System.out.println("BOOKS OF EAST YEAR " + year + " :");
-        for (Book x : list) {
-            if (x.getYear() >= (year))
-                System.out.println(x);
+    public ArrayList listBooksFromYear(int year) {
+       ArrayList<Book>bookYear=new ArrayList<>();
+        for (int i=0; i<list.size();i++) {
+            if (list.get(i).getYear() >= (year))
+               bookYear.add(list.get(i));
         }
+        return bookYear;
     }
 
     @Override

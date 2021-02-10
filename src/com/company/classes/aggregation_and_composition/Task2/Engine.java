@@ -2,24 +2,25 @@ package com.company.classes.aggregation_and_composition.Task2;
 
 public class Engine {
 
-private String firm;
-private  double volume;
-private int power;
-private  String type;
-private boolean activ;
-public Engine(){
-    firm= "unknow";
-  volume=0;
-  power=0;
-  type="unknow";
-}
+    private String firm;
+    private double volume;
+    private int power;
+    private String type;
+    private boolean activ;
 
-public Engine(String firm, double volume, int power, String type){
-   this.firm=firm;
-   this.volume=volume;
-   this.power=power;
-   this.type=type;
-}
+    public Engine() {
+        firm = "unknow";
+        volume = 0;
+        power = 0;
+        type = "unknow";
+    }
+
+    public Engine(String firm, double volume, int power, String type) {
+        this.firm = firm;
+        this.volume = volume;
+        this.power = power;
+        this.type = type;
+    }
 
     public void setFirm(String firm) {
         this.firm = firm;
@@ -53,9 +54,9 @@ public Engine(String firm, double volume, int power, String type){
         return type;
     }
 
-    public void  engineRunning(Boolean activ){
+    public void engineRunning(Boolean activ) {
 
-        System.out.println(activ?"Engine running.":"Engine static.");
+        System.out.println(activ ? "Engine running." : "Engine static.");
     }
 
     @Override

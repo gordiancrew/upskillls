@@ -3,11 +3,12 @@ package com.company.classes.aggregation_and_composition.Task3;
 public class Region {
     private String name;
     private Town regionCenter;
-    private  double square;
-    public Region(String name, Town regionCenter,double square){
-        this.name=name;
-        this.regionCenter=regionCenter;
-        this.square=square;
+    private double square;
+
+    public Region(String name, Town regionCenter, double square) {
+        this.name = name;
+        this.regionCenter = regionCenter;
+        this.square = square;
     }
 
     public void setName(String name) {

@@ -25,12 +25,9 @@ public class Main {
         monday.setCustomer(new Customer("Davidov D.D.", "Minsk", new BigInteger("2222111111111111"), new BigInteger("9999999999990000")));
         System.out.println("SUNDAY LIST:\n" + sunday);
         sunday.sortCustomersLetters();
-        System.out.println("SORT ALFABET SUNDAY LIST:");
-        System.out.println(sunday);
         sunday.listCustomersByCreditNumber(new BigInteger("1111111111111111"), new BigInteger("2222222222222222"));
-        System.out.println("SORT CREDIT NUMBER SUNDAY LIST:");
-        System.out.println(sunday);
-        System.out.println("MUNDAY LIST:");
-        System.out.println(monday);
+        sunday.sortCustomersLetters();
+
+
     }
 }

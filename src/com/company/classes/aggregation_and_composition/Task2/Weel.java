@@ -5,7 +5,7 @@ public class Weel {
     private int diametr;
     private String season;
     private String firm;
-    Boolean activ;
+    private boolean activ;
 
     public Weel() {
         diametr = 0;

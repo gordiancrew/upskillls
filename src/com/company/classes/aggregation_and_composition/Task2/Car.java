@@ -4,23 +4,25 @@ import java.util.Arrays;
 
 public class Car {
 
-    private  String brand;
+    private String brand;
     private String color;
-    private  String number;
-    private Weel[] weels=new Weel[4];
-    private  Engine engine;
-    public Car(){
-      brand="unknow";
-      color="unknow";
-      number="unknow";
-      engine=new Engine();
+    private String number;
+    private Weel[] weels = new Weel[4];
+    private Engine engine;
+
+    public Car() {
+        brand = "unknow";
+        color = "unknow";
+        number = "unknow";
+        engine = new Engine();
     }
-    public Car(String brand,String color,String number,Weel[]weels,Engine engine){
-     this.brand=brand;
-     this.color=color;
-     this.number= number;
-     this.weels=weels;
-     this.engine=engine;
+
+    public Car(String brand, String color, String number, Weel[] weels, Engine engine) {
+        this.brand = brand;
+        this.color = color;
+        this.number = number;
+        this.weels = weels;
+        this.engine = engine;
     }
 
     public void setBrand(String brand) {
@@ -63,25 +65,25 @@ public class Car {
         return weels;
     }
 
-    public  void carGo(){
-        System.out.println("CAR IS GO.");
-        for(Weel x:weels)
+    public void carGo() {
+        System.out.println("CAR DRIVE.");
+        for (Weel x : weels)
             x.weelSpining(true);
         engine.engineRunning(true);
     }
 
-    public  void carRefueling(){
+    public void carRefueling() {
         System.out.println("CAR REFUELING.");
-        for(Weel x:weels)
+        for (Weel x : weels)
             x.weelSpining(false);
         engine.engineRunning(false);
     }
 
-    public void changeWeel(int numberWeel, Weel changer){
+    public void changeWeel(int numberWeel, Weel changer) {
         System.out.println("CHANGE WEEL.");
-       engine.engineRunning(false);
-        System.out.println(weels[numberWeel]+" change for "+changer);
-        weels[numberWeel-1]=changer;
+        engine.engineRunning(false);
+        System.out.println(weels[numberWeel] + " change for " + changer);
+        weels[numberWeel - 1] = changer;
 
     }
 

@@ -51,12 +51,14 @@ public class Customer {
     public BigInteger getBankNumber() {
         return bankNumber;
     }
-    public  int getId(){
-        return  id;
+
+    public int getId() {
+        return id;
     }
+
     @Override
-    public  String toString(){
-     return "\nname is: "+getName()+", id is: "+getId()+", adress is: "+getAdress()+"\ncredit number is: "+
-     getCredinNumber()+", bank number is: "+getBankNumber();
+    public String toString() {
+        return "name is: " + getName() + ", id is: " + getId() + ", adress is: " + getAdress() + ", credit number is: " +
+                getCredinNumber() + ", bank number is: " + getBankNumber();
     }
 }

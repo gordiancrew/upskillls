@@ -31,19 +31,23 @@ public class Train {
     }
 
     public static ArrayList sortNumberTrain(ArrayList<Train> list) {
-        Comparator<Train> comp = Comparator.comparing(Train -> Train.getNumber());
-        Collections.sort(list, comp);
+       // Comparator<Train> comp = Comparator.comparing(Train -> Train.getNumber());
+        Collections.sort(list, Comparator.comparing(Train::getNumber));
         return list;
     }
 
-    public static ArrayList sortState(ArrayList<Train> list) {
-        Comparator<Train> comp = Comparator.comparing(Train -> Train.getState());
-        Comparator<Train> comp2 = Comparator.comparing(Train -> Train.getTime());
+
+
+    public static ArrayList<Train> sortState(ArrayList<Train> list) {
+        //Comparator<Train> comp = Comparator.comparing(Train -> Train.getState());
+       // Comparator<Train> comp2 = Comparator.comparing(Train -> Train.getTime());
         //Comparator<Train>comp3=Comparator.comparing(Train->Train.getState(),Train->Train.getTime());
-        Collections.sort(list, comp2);
-        Collections.sort(list, comp);
+
+        list.sort(Train::compareTo);
         return list;
     }
+
+
 
     public static void printInformationForNum(int num, ArrayList<Train> list) {
         SimpleDateFormat formater = new SimpleDateFormat("HH:mm");
@@ -58,5 +62,14 @@ public class Train {
         SimpleDateFormat formater = new SimpleDateFormat("HH:mm");
         for (Train train : list)
             System.out.println("State=" + train.state + ", Number=" + train.number + ", Time=" + formater.format(train.time));
+    }
+
+    public  int compareTo(Train o){
+        int result=this.getState().compareTo(o.getState());
+        if(result==0){
+            result=this.getTime().compareTo(o.getTime());
+        }
+        return  result;
+
     }
 }

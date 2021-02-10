@@ -6,11 +6,13 @@ public class Student {
     private String name;
     private int groupe;
     private int[] marks;
+
     public Student(String name, int groupe, int[]marks){
        this.name=name;
        this.groupe= groupe;
        this.marks=marks;
     }
+
     public  static void printGoodStudent(ArrayList<Student>list){
         for(Student x:list) {
           if (GoodStudy(x.marks)){

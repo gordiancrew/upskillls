@@ -54,13 +54,15 @@ public class State {
         }
         System.out.println("Square of " + getName() + " is " + square + " m2");
     }
-    public  void printRegionsCenters(){
-        StringBuilder str=new StringBuilder();
-        str.append("Regions centers of "+getName()+" is ");
-        for (Region x : regions) {
-str.append(x.getRegionCenter().getName()+", ");
+
+    public ArrayList<String> printRegionsCenters() {
+        ArrayList<String>regCentr=new ArrayList<>();
+
+
+        for (int i=0;i<regions.size();i++) {
+           regCentr.add(regions.get(i).getRegionCenter().getName());
         }
-        System.out.println(str.toString());
+       return regCentr;
     }
 
     @Override
