@@ -7,3 +7,6 @@ silver
 RussianImperials
 89
 gold
+Deutchland
+30
+gold

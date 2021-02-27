@@ -48,7 +48,6 @@ public class Account {
             else
                 selectTreasure(a);
         }
-        scan.close();
 
         System.out.println("Ваш заказ:\n" +
                 list + "\nпотраченная сумма:" + sum + "\nостаток:" + (money - sum));

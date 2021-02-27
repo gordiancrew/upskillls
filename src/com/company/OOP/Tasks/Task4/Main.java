@@ -1,7 +1,10 @@
 package com.company.OOP.Tasks.Task4;
 
 
+import com.company.OOP.Tasks.Task5.FlowerStore;
+
 import java.io.IOException;
+import java.util.Scanner;
 
 import static com.company.OOP.Tasks.Task4.Menu.menu;
 
@@ -17,8 +20,14 @@ public class Main {
     //Дракон и его сокровища. Создать программу, позволяющую обрабатывать сведения о 100 сокровищах в пещере дракона.
     // Реализовать возможность просмотра сокровищ,
     // выбора самого дорогого по стоимости сокровища и выбора сокровищ на заданную сумму.
-
+    public static boolean go=true;
     public static void main(String[] args) throws IOException {
-        menu();
+
+       while (go)
+            menu();
+
+
+
+
     }
 }
