@@ -100,15 +100,12 @@ public class Menu {
                        if(sel4<0||sel4>store.getPackaging().size())
                            System.out.println("incorrect input");
                        else if(sel4!=0){
-
                            myBouquet.getElementList().add(store.getPackaging().get(sel4 - 1));
                            System.out.println("Добавлено: " + store.getPackaging().get(sel4 - 1).toString() + "\n" +
                                    "еще упаковки?");
-
                        }
                        else
                            running=false;
-
                     }
                     else {
                         System.out.println(scanner.next()+"-incorrect input");
