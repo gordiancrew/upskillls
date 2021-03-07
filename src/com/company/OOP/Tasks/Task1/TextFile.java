@@ -6,6 +6,8 @@ import java.util.Scanner;
 public class TextFile extends File {
     java.io.File file;
 
+
+
     public TextFile(String name) throws IOException {
         super(name);
         this.name = name;

@@ -25,9 +25,5 @@ public class Main {
 
        while (go)
             menu();
-
-
-
-
     }
 }

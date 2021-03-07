@@ -10,14 +10,16 @@ public class Main {
     // вывести на консоль содержимое, дополнить, удалить.
     public static void main(String[] args) throws IOException {
 
-        File file1 = new TextFile("f1");
-        File file2 = new TextFile("f2");
+        File file1 = new TextFile("a1");
+        File file2 = new TextFile("a2");
         file1.createFile("hello");
+        file1.printFileConsol();
         file2.createFile("Yahooo");
         Directory dir1 = new Directory("Direc1");
         dir1.setFileToDirectory(file1);
         dir1.setFileToDirectory(file2);
         file1.addToFile("my name is Vova");
+        file1.printFileConsol();
         file1.addToFile("Good luck gays!!");
         System.out.println(dir1.getNameFilesDirectory());
         file1.printFileConsol();

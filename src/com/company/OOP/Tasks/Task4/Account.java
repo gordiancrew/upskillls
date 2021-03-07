@@ -10,14 +10,14 @@ import java.util.Scanner;
 import static com.company.OOP.Tasks.Task4.Cave.getTreasures;
 
 public class Account {
-    private String name;
+
     private int money;
     private int sum;
     private Treasure treasure;
     private HashSet<Treasure> list = new HashSet<>();
 
     public Account(int money) {
-        this.name = name;
+
         this.money = money;
         sum = 0;
     }
