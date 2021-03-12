@@ -1,24 +1,33 @@
 package com.company.OOP.Tasks.Task5.Elements;
 
-import com.company.OOP.Tasks.Task5.Enams.Color;
-import com.company.OOP.Tasks.Task5.Enams.SortGreens;
+
 
 import java.util.Objects;
 
 public class Greens extends Element {
-    private SortGreens sortGreens;
+    private String sortGreens;
 
-    public Greens(SortGreens sortGreens, int price){
+    public Greens(String sortGreens, int price){
         super(price);
         this.sortGreens=sortGreens;
     }
 
-    public SortGreens getSortGreens() {
-        return sortGreens;
+    @Override
+    public void setPrice(int price) {
+        super.setPrice(price);
     }
 
-    public void setSortGreens(SortGreens sortGreens) {
+    public void setSortGreens(String sortGreens) {
         this.sortGreens = sortGreens;
+    }
+
+    @Override
+    public int getPrice() {
+        return super.getPrice();
+    }
+
+    public String getSortGreens() {
+        return sortGreens;
     }
 
     @Override

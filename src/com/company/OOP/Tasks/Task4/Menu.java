@@ -10,10 +10,12 @@ public class Menu {
 
     public static void menu() {
         Scanner scanner = new Scanner(System.in);
+        int money;
         System.out.println("\nMENU \nВыберите действие: " +
                 "\n1-Список сокровищ." +
                 "\n2-Самое дорогое сокровище." +
                 "\n3-заказ сокровищ на заданную сумму." +
+                "\n4-рандомный набор сокровищ на заданную сумму" +
                 "\n0-выход из программы.");
         int select = scanner.nextInt();
         switch (select) {
@@ -26,9 +28,15 @@ public class Menu {
                 break;
             case 3:
                 System.out.println("Введите сумму ваших денег: ");
-                int money = scanner.nextInt();
+                 money = scanner.nextInt();
                 Account a1 = new Account(money);
                 a1.buyTreasures();
+                break;
+            case 4:
+                System.out.println("Введите сумму ваших денег: ");
+                money=scanner.nextInt();
+                Account a4=new Account(money);
+                a4.randhomTreasure();
                 break;
             case 0:
                 Main.go = false;

@@ -1,10 +1,9 @@
-package com.company.OOP.Tasks.Task5.Elements.Packagings;
+package com.company.OOP.Tasks.Task5.Elements.Packages;
 
-import com.company.OOP.Tasks.Task5.Elements.Packaging;
-import com.company.OOP.Tasks.Task5.Enams.Color;
+import com.company.OOP.Tasks.Task5.Elements.Package;
 
-public class Tape extends Packaging {
-    public Tape(Color color, int price ) {
+public class Tape extends Package {
+    public Tape(String color, int price ) {
         super(price, color);
     }
 
@@ -14,10 +13,14 @@ public class Tape extends Packaging {
     }
 
     @Override
-    public Color getColor() {
+    public String getColor() {
         return super.getColor();
     }
 
+    @Override
+    public void setPrice(int price) {
+        super.setPrice(price);
+    }
 
     @Override
     public String toString() {

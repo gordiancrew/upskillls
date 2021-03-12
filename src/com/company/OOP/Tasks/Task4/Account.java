@@ -2,10 +2,7 @@ package com.company.OOP.Tasks.Task4;
 
 import com.company.OOP.Tasks.Task4.Treasure.Treasure;
 
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.Scanner;
+import java.util.*;
 
 import static com.company.OOP.Tasks.Task4.Cave.getTreasures;
 
@@ -17,7 +14,6 @@ public class Account {
     private HashSet<Treasure> list = new HashSet<>();
 
     public Account(int money) {
-
         this.money = money;
         sum = 0;
     }
@@ -32,6 +28,20 @@ public class Account {
     public static void printExpensiveTreasure() {
         Comparator<Treasure> comp = Comparator.comparing(Treasure::getPrice);
         System.out.println("Самое дорогое сокровище пещеры:\n" + Collections.max(getTreasures(), comp).toString());
+    }
+
+    public void randhomTreasure(){
+        ArrayList<Treasure> randhomList= getTreasures();
+        Collections.shuffle(randhomList);
+        for(Treasure x:randhomList){
+           if(x.getPrice()<(money-sum)){
+              list.add(x);
+              sum+=x.getPrice();
+           }
+        }
+        System.out.println("Ваш заказ:\n" +
+                list + "\nпотраченная сумма:" + sum + "\nостаток:" + (money - sum));
+
     }
 
     public void buyTreasures() {

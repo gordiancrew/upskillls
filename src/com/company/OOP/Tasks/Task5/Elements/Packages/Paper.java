@@ -1,24 +1,37 @@
-package com.company.OOP.Tasks.Task5.Elements.Packagings;
+package com.company.OOP.Tasks.Task5.Elements.Packages;
 
-import com.company.OOP.Tasks.Task5.Elements.Packaging;
-import com.company.OOP.Tasks.Task5.Enams.Color;
-import com.company.OOP.Tasks.Task5.Enams.TypePaper;
+import com.company.OOP.Tasks.Task5.Elements.Package;
 
 import java.util.Objects;
 
-public class Paper extends Packaging {
-    private TypePaper typePaper;
-    public Paper(TypePaper typePaper,Color color,int price) {
+public class Paper extends Package {
+    private String typePaper;
+    public Paper(String typePaper,String color,int price) {
         super(price, color);
         this.typePaper=typePaper;
     }
 
-    public TypePaper getTypePaper() {
+    @Override
+    public void setPrice(int price) {
+        super.setPrice(price);
+    }
+
+    public void setTypePaper(String typePaper) {
+        this.typePaper = typePaper;
+    }
+
+    @Override
+    public String getColor() {
+        return super.getColor();
+    }
+
+    public String getTypePaper() {
         return typePaper;
     }
 
-    public void setTypePaper(TypePaper typePaper) {
-        this.typePaper = typePaper;
+    @Override
+    public int getPrice() {
+        return super.getPrice();
     }
 
     @Override
