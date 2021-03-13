@@ -1,0 +1,3 @@
+craft,white,1
+gloss,red,1
+matt,green,2

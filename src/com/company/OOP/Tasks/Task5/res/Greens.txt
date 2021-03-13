@@ -1,0 +1,3 @@
+Ruscus,2
+Pistacho,1
+Eucaliptus,2

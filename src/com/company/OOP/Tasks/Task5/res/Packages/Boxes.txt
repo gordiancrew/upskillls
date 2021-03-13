@@ -1,0 +1,3 @@
+metal,grey,8
+wood,yellow,11
+carton,blue,3
